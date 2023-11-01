@@ -15,4 +15,13 @@ describe('Test in the plugin get-age.', () => {
 
         expect( age ).toBe( calculatedAge );
     });
+
+    test('getAge() should return 0 years.', () => { 
+        const spy = jest.spyOn(Date.prototype, 'getFullYear').mockReturnValue(1996);
+        const birthdate = '1996-12-16';
+        const age = getAge(birthdate);
+
+        expect( age ).toBe( 0 );
+        expect( spy ).toHaveBeenCalled();
+    });
 });
