@@ -2,7 +2,7 @@
 
 Se ven los primeros pasos para `Testing` en nuestro poryecto de bases.
 
-# Pasos para configurar Jest con TypeScript, en Node 
+### Pasos para configurar Jest con TypeScript, en Node 
 
 Documentación [oficial sobre Jest](https://jestjs.io/docs/getting-started)
 
